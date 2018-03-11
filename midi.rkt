@@ -240,11 +240,10 @@
 
 
 (define midi-content
-  (midi-file-parse "/Users/kashyap/Dropbox/beatit_saved_from_midget.mid"))
+  (midi-file-parse "/home/Jr/Downloads/Video_Game_Themes_-_Zelda-_Ocarina_Of_Time.mid"))
 
 (define file-port
-  (open-output-file "/Users/kashyap/Documents/midi/out.rkt"
-                    #:exists 'replace))
+  (open-output-file "/home/Jr/Downloads/"))
 
 (require racket/pretty)
 (pretty-print midi-content file-port)
